@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Team Member Slider Functions
   new Swiper('[data-swiper-element-id="team"]', {
-    loop: true,
+    rewind: true,
     autoplay: {
       delay: 3000,
     },
@@ -22,7 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // Testimonial Slider Functions
   new Swiper('[data-swiper-element-id="testimoial"]', {
-    loop: true,
+    rewind: true,
+    autoplay: {
+      delay: 3000,
+    },
     slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {
@@ -34,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
     navigation: {
-      nextEl: '[data-swiper-navigation-id="team-next"]',
-      prevEl: '[data-swiper-navigation-id="team-prev"]',
+      nextEl: '[data-swiper-navigation-id="testimoial-next"]',
+      prevEl: '[data-swiper-navigation-id="testimoial-prev"]',
     },
   });
 });

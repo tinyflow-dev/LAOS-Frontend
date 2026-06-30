@@ -661,20 +661,6 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(2.5rem, 3.3835vw + 1.707rem, 4.75rem);
 }
-@media screen and (max-width: 1080px) {
-  .cta__component {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .cta__figure {
-    justify-items: center;
-  }
-  .cta__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
 .cta__content {
   align-content: center;
 }
@@ -691,6 +677,23 @@ img {
 }
 .cta__img {
   border-radius: 0.5rem;
+}
+@media screen and (max-width: 1080px) {
+  .cta__component {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cta__figure {
+    justify-items: center;
+  }
+  .cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cta__actions {
+    justify-content: center;
+  }
 }
 /*Section Testimonial*/
 .section-testimonial {
